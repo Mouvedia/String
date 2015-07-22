@@ -19,5 +19,5 @@ A bunch of cross-browser methods that extends `String`.
 
 ## Instance methods
 #### String.prototype.has(str: string [, insensitive: boolean]) -> boolean
-#### String.prototype.insert(index: ℕ, str: string) -> string
+#### String.prototype.insert(index: integer, str: string) -> string
 #### String.prototype.inspect(str: string) -> string
