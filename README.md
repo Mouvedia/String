@@ -1,4 +1,4 @@
-A bunch of cross-browser methods that extends `String`.
+A bunch of cross-browser methods that extend `String`.
 
 ## Static methods
 #### String.isString(?: any) -> boolean
