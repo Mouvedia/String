@@ -1,3 +1,5 @@
+/*jshint -W086:true*/
+
 String.parseAsId = function(id, type) {
   var startChar, NCName;
 
@@ -22,7 +24,6 @@ String.parseAsId = function(id, type) {
         console.warn('Names beginning with "' + id.substring(0, 3) + '" are reserved for XML standardization.');
       break;
     case 'HTML4':
-      /* falls through */
     default:
       id = id.replace(/^[ \t\n\f\r\u200b]+|[ \t\n\f\r\u200b]+$/g, '');
       if (!/^[a-zA-Z][\w:.-]*$/.test(id))
