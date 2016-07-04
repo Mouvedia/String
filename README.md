@@ -1,23 +1,29 @@
 A bunch of cross-browser methods that extend `String`.
 
 ## Static methods
-#### String.isString(?) -> boolean
-#### String.parseAsClass(class [, HTML5]) throws -> void
-##### dependencies
-- String.isString
-- String.prototype.inspect
+```js
+String.isString(Any)
+    => Boolean
 
-#### String.parseAsId(id [, type]) throws -> void
-##### dependencies
-- String.isString
-- String.prototype.inspect
+String.parseAsClass(class: String, HTML5?: !!Any)
+    => Void,
+    throws: TypeError | SyntaxError | DOMException,
+    requires: String.isString, String.prototype.inspect
 
-##### types
-  - 'HTML4' <sup><small>default</small></sup>
-  - 'HTML5'
-  - 'XML1'
-
+String.parseAsId(id: String, 'HTML4'? | 'HTML5' | 'XML1')
+    => Void,
+    throws: TypeError | SyntaxError | DOMException,
+    requires: String.isString, String.prototype.inspect
+```
 ## Instance methods
-#### String.prototype.has(str [, insensitive]) -> boolean
-#### String.prototype.insert(index, str) -> string
-#### String.prototype.inspect(str) -> string
+```js
+String.prototype.has(String, insensitive?: !!Any)
+    => Boolean,
+    throws: TypeError
+
+String.prototype.insert(index: Number, String)
+    => String
+
+String.prototype.inspect(String)
+    => String
+```
