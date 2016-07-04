@@ -4,7 +4,7 @@ String.parseAsId = function(id, type) {
   var startChar, NCName;
 
   if (!String.isString(id))
-    throw new TypeError('The passed argument must be a string.');
+    throw new TypeError('The first argument must be a string.');
   if (id === '')
     throw new SyntaxError('The string provided must not be empty.');
 
