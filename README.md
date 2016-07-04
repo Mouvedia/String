@@ -16,15 +16,35 @@ String.parseAsId(id: String, 'HTML4'? | 'HTML5' | 'XML1')
     requires: String.isString, String.prototype.inspect
 ```
 ## Instance methods
+### \#has
+#### Installation
+```sh
+npm install --save @string/prototype.has
+```
+#### Signature
 ```js
 String.prototype.has(String, insensitive?: !!Any)
     => Boolean,
     throws: TypeError
-
+```
+### \#insert
+#### Installation
+```sh
+npm install --save @string/prototype.insert
+```
+#### Signature
+```js
 String.prototype.insert(index: Number, String)
     => String,
     throws: TypeError
-
+```
+### \#inspect
+#### Installation
+```sh
+npm install --save @string/prototype.inspect
+```
+#### Signature
+```js
 String.prototype.inspect(String)
     => String,
     throws: TypeError
