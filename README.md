@@ -22,8 +22,10 @@ String.prototype.has(String, insensitive?: !!Any)
     throws: TypeError
 
 String.prototype.insert(index: Number, String)
-    => String
+    => String,
+    throws: TypeError
 
 String.prototype.inspect(String)
-    => String
+    => String,
+    throws: TypeError
 ```
