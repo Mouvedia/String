@@ -1,6 +1,4 @@
-/*jshint -W086:true*/
-
-String.parseAsId = function(id, type) {
+String.parseAsId = function (id, type) {
   var startChar, NCName;
 
   if (!String.isString(id))
