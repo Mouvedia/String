@@ -9,20 +9,6 @@ npm install --save @string/isstring
 String.isString(Any)
     => Boolean
 ```
-### parseAsId
-```js
-String.parseAsId(id: String, 'HTML4'? | 'HTML5' | 'XML1')
-    => Void,
-    throws: TypeError | SyntaxError | DOMException,
-    requires: String.isString, String.prototype.inspect
-```
-### parseAsClass
-```js
-String.parseAsClass(class: String, HTML5?: !!Any)
-    => Void,
-    throws: TypeError | SyntaxError | DOMException,
-    requires: String.isString, String.prototype.inspect
-```
 
 ## Instance methods
 ### \#has
